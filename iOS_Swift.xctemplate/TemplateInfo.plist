@@ -5,7 +5,7 @@
     <key>Kind</key>
     <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
     <key>Identifier</key>
-    <string>com.apple.dt.unit.singleViewApplication</string>
+    <string>com.serglam.dt.unit.iOS_Swift</string>
     <key>Ancestors</key>
     <array>
         <string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
@@ -14,7 +14,7 @@
     <key>Concrete</key>
     <true/>
     <key>Description</key>
-    <string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
+    <string>Basic iOS project structure + podfile</string>
     <key>SortOrder</key>
     <integer>1</integer>
     <key>NameOfInitialFileForEditor</key>
@@ -26,37 +26,6 @@
             <string>languageChoice</string>
             <key>Units</key>
             <dict>
-                <key>Objective-C</key>
-                <dict>
-                    <key>Nodes</key>
-                    <array>
-                        <string>ViewController.h:comments</string>
-                        <string>ViewController.h:imports:importCocoa</string>
-                        <string>ViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
-                        <string>ViewController.m:comments</string>
-                        <string>ViewController.m:imports:importHeader:ViewController.h</string>
-                        <string>ViewController.m:extension</string>
-                        <string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
-                        <string>ViewController.m:implementation:methods:viewDidLoad:super</string>
-                        <string>Info.plist:UIMainStoryboardFile</string>
-                        <string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
-                        <string>Base.lproj/Main.storyboard</string>
-                    </array>
-                    <key>Definitions</key>
-                    <dict>
-                        <key>Base.lproj/Main.storyboard</key>
-                        <dict>
-                            <key>Path</key>
-                            <string>Main.storyboard</string>
-                            <key>SortOrder</key>
-                            <integer>98</integer>
-                        </dict>
-                        <key>Info.plist:UIMainStoryboardFile</key>
-                        <string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
-                            &lt;string&gt;Main&lt;/string&gt;
-                        </string>
-                    </dict>
-                </dict>
                 <key>Swift</key>
                 <array>
                     <dict>
