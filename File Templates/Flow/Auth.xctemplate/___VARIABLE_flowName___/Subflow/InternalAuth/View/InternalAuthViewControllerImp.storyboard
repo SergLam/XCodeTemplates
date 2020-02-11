@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Internal Auth View Controller Imp-->
+        <scene sceneID="ImB-SG-0Ik">
+            <objects>
+                <viewController storyboardIdentifier="InternalAuthViewControllerImp" id="xMV-0T-69M" customClass="InternalAuthViewControllerImp" customModule="Auth_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ilh-vu-oBa">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="295"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITU-xU-IW5" customClass="AuthLogPassView" customModule="Auth_V2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="278" height="105"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="vOq-NG-hy7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw1-Bb-N1L">
+                                <rect key="frame" x="0.0" y="135" width="278" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="sgv-W5-33y"/>
+                                </constraints>
+                                <state key="normal" title="Sign In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.098538391289999999" green="0.54087364670000004" blue="0.38263946770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signInButtonPressed:" destination="xMV-0T-69M" eventType="touchUpInside" id="Gpj-9I-q13"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uky-1M-WFS">
+                                <rect key="frame" x="0.0" y="195" width="278" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j65-X5-F9r"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpButtonPressed:" destination="xMV-0T-69M" eventType="touchUpInside" id="xje-A7-WqX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCl-18-ieq">
+                                <rect key="frame" x="73" y="260" width="132" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="RVy-6o-QTX"/>
+                                    <constraint firstAttribute="width" constant="132" id="l5h-hZ-lI5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Forgot account?"/>
+                                <connections>
+                                    <action selector="forgotAcoountButtonPressed:" destination="xMV-0T-69M" eventType="touchUpInside" id="JIL-zh-aqk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ITU-xU-IW5" firstAttribute="leading" secondItem="BjH-Vm-9C0" secondAttribute="leading" id="8Tk-N3-1Yn"/>
+                            <constraint firstItem="uky-1M-WFS" firstAttribute="top" secondItem="Lw1-Bb-N1L" secondAttribute="bottom" constant="15" id="BMG-Bh-OzR"/>
+                            <constraint firstItem="Lw1-Bb-N1L" firstAttribute="leading" secondItem="BjH-Vm-9C0" secondAttribute="leading" id="CMy-GA-QX1"/>
+                            <constraint firstItem="BjH-Vm-9C0" firstAttribute="trailing" secondItem="uky-1M-WFS" secondAttribute="trailing" id="Q0f-kI-Oqd"/>
+                            <constraint firstItem="BjH-Vm-9C0" firstAttribute="trailing" secondItem="ITU-xU-IW5" secondAttribute="trailing" id="Udi-zz-jSk"/>
+                            <constraint firstItem="ITU-xU-IW5" firstAttribute="top" secondItem="ilh-vu-oBa" secondAttribute="top" id="X1G-uN-4Hn"/>
+                            <constraint firstItem="Lw1-Bb-N1L" firstAttribute="top" secondItem="ITU-xU-IW5" secondAttribute="bottom" constant="30" id="bhr-dH-8mf"/>
+                            <constraint firstItem="uky-1M-WFS" firstAttribute="leading" secondItem="BjH-Vm-9C0" secondAttribute="leading" id="jRY-hU-tbt"/>
+                            <constraint firstItem="BjH-Vm-9C0" firstAttribute="trailing" secondItem="Lw1-Bb-N1L" secondAttribute="trailing" id="r5i-Mb-l1V"/>
+                            <constraint firstItem="eCl-18-ieq" firstAttribute="centerX" secondItem="ilh-vu-oBa" secondAttribute="centerX" id="vUM-48-0Xm"/>
+                            <constraint firstItem="eCl-18-ieq" firstAttribute="bottom" secondItem="BjH-Vm-9C0" secondAttribute="bottom" id="yxf-sd-6Hs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BjH-Vm-9C0"/>
+                    </view>
+                    <size key="freeformSize" width="278" height="295"/>
+                    <connections>
+                        <outlet property="loginPassView" destination="ITU-xU-IW5" id="SMR-6C-us2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kX-at-LHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="118"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,7 @@
+//___FILEHEADER___
+
+import Foundation
+import UIKit
+
+final class ___VARIABLE_flowName___ConfiguratorImp: BaseConfigurator<___VARIABLE_flowName___ViewControllerImp, ___VARIABLE_flowName___PresenterImp, ___VARIABLE_flowName___InteractorImp>, ___VARIABLE_flowName___Configurator {
+}

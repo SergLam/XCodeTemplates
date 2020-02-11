@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hUA-hh-WcO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restore account-->
+        <scene sceneID="k0I-Tp-rz1">
+            <objects>
+                <viewController storyboardIdentifier="RestoreViewControllerImp" id="XiI-8O-FvF" customClass="RestoreViewControllerImp" customModule="Auth_V2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvM-7f-rxo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="BV8-V6-7Em">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHu-4B-dcp" customClass="RestoreView" customModule="Auth_V2" customModuleProvider="target">
+                                <rect key="frame" x="68" y="325.5" width="278" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="gRn-d3-hhT"/>
+                                    <constraint firstAttribute="height" constant="45" id="hFa-53-Rhn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMh-PU-EAX">
+                                <rect key="frame" x="68" y="400.5" width="278" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="7GF-TZ-9N3"/>
+                                    <constraint firstAttribute="height" constant="45" id="Bw0-QU-qre"/>
+                                </constraints>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendButtonAction:" destination="XiI-8O-FvF" eventType="touchUpInside" id="LNG-Ug-6ZP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56590640544891357" green="0.64651727676391602" blue="0.68235927820205688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dUk-Fz-lVn" firstAttribute="trailing" secondItem="BV8-V6-7Em" secondAttribute="trailing" id="1XZ-0w-2nZ"/>
+                            <constraint firstItem="YHu-4B-dcp" firstAttribute="centerX" secondItem="rvM-7f-rxo" secondAttribute="centerX" id="9Ze-vu-y2i"/>
+                            <constraint firstItem="BMh-PU-EAX" firstAttribute="top" secondItem="YHu-4B-dcp" secondAttribute="bottom" constant="30" id="ACh-g6-DNd"/>
+                            <constraint firstItem="BV8-V6-7Em" firstAttribute="top" secondItem="dUk-Fz-lVn" secondAttribute="top" id="Jg5-k4-nXX"/>
+                            <constraint firstItem="BV8-V6-7Em" firstAttribute="leading" secondItem="dUk-Fz-lVn" secondAttribute="leading" id="YiJ-t2-7O2"/>
+                            <constraint firstItem="dUk-Fz-lVn" firstAttribute="bottom" secondItem="BV8-V6-7Em" secondAttribute="bottom" id="vBg-6e-ScH"/>
+                            <constraint firstItem="BMh-PU-EAX" firstAttribute="centerX" secondItem="rvM-7f-rxo" secondAttribute="centerX" id="vDI-1g-pVf"/>
+                            <constraint firstItem="YHu-4B-dcp" firstAttribute="centerY" secondItem="rvM-7f-rxo" secondAttribute="centerY" constant="-100" id="xMP-dW-NnY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dUk-Fz-lVn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Restore account" id="2gD-ff-8rj"/>
+                    <connections>
+                        <outlet property="restoreFieldView" destination="YHu-4B-dcp" id="92G-xz-Z9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bG-ZT-42x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076.8115942028987" y="156.69642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gMF-BC-3TQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hUA-hh-WcO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Egz-Tq-D9U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XiI-8O-FvF" kind="relationship" relationship="rootViewController" id="n3o-kW-xfh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PU0-HI-063" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.66666666666669" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="water" width="562.5" height="1218"/>
+    </resources>
+</document>

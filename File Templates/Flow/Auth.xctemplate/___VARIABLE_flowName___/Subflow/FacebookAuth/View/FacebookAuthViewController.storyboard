@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Facebook Auth View Controller Imp-->
+        <scene sceneID="pS9-Lh-iVd">
+            <objects>
+                <viewController storyboardIdentifier="FacebookAuthViewControllerImp" id="I5s-2m-FEC" customClass="FacebookAuthViewControllerImp" customModule="SignIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ACM-SG-ncS">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r90-bA-T6X" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="75" y="0.0" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.070487864315509796" green="0.51390182971954346" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" placeholder="YES" id="F10-6h-Ymd"/>
+                                    <constraint firstAttribute="width" constant="200" placeholder="YES" id="UpP-hK-b9c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r90-bA-T6X" firstAttribute="centerY" secondItem="ACM-SG-ncS" secondAttribute="centerY" id="LvY-pB-KxA"/>
+                            <constraint firstItem="r90-bA-T6X" firstAttribute="centerX" secondItem="ACM-SG-ncS" secondAttribute="centerX" id="sbo-9W-tqT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="crz-Oi-8Fw"/>
+                    </view>
+                    <size key="freeformSize" width="350" height="40"/>
+                    <connections>
+                        <outlet property="loginButton" destination="r90-bA-T6X" id="O0u-4n-1uF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEI-4x-F9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="110"/>
+        </scene>
+    </scenes>
+</document>
