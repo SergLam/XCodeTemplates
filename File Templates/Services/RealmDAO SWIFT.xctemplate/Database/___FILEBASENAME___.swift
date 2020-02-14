@@ -3,13 +3,13 @@
 import Foundation
 import RealmSwift
 
-// NOTE: - RealmDAO.configureMigration() - call this method before first call to the database in your app.
+// NOTE: - ___VARIABLE_optionName___.configureMigration() - call this method before first call to the database in your app.
 // E.g. at the app delegate init method
-final class ___FILEBASENAMEASIDENTIFIER___ {
+final class ___VARIABLE_optionName___ {
     
-    static let shared = RealmDAO()
+    static let shared = ___VARIABLE_optionName___()
     
-    static let currentSchemaVersion: UInt64 = RealmDAO.getCurrentDatabaseVersion() + 1
+    static let currentSchemaVersion: UInt64 = ___VARIABLE_optionName___.getCurrentDatabaseVersion() + 1
     
     /**
     IMPORTANT: This realm instance should be used only for initial app creation + migration process.
@@ -123,15 +123,15 @@ final class ___FILEBASENAMEASIDENTIFIER___ {
         
         // NOTE: Clean up your database.
         // Usefull for user log out actions and ect.
-        // RealmDAO.shared.deleteAll(Chat.self)
-        // RealmDAO.shared.deleteAll(Message.self)
-        // RealmDAO.shared.deleteAll(User.self)
+        // ___VARIABLE_optionName___.shared.deleteAll(Chat.self)
+        // ___VARIABLE_optionName___.shared.deleteAll(Message.self)
+        // ___VARIABLE_optionName___.shared.deleteAll(User.self)
     }
     
 }
 
 // MARK: - Database migration functionality
-extension RealmDAO {
+extension ___VARIABLE_optionName___ {
     
     static func configureMigration() {
         let config = Realm.Configuration(schemaVersion: currentSchemaVersion, migrationBlock: { _, oldSchemaVersion in
@@ -168,8 +168,8 @@ extension RealmDAO {
     
     private func isMigrationRequired() -> Bool {
         
-        let lastSchemaVersion = RealmDAO.getCurrentDatabaseVersion()
-        return RealmDAO.currentSchemaVersion < lastSchemaVersion
+        let lastSchemaVersion = ___VARIABLE_optionName___.getCurrentDatabaseVersion()
+        return ___VARIABLE_optionName___.currentSchemaVersion < lastSchemaVersion
     }
     
     private func deleteDatabase() {

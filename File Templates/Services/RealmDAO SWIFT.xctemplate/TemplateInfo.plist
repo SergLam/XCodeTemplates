@@ -24,7 +24,7 @@
 	<array>
 		<dict>
 			<key>SortOrder</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>Type</key>
 			<string>static</string>
 			<key>Description</key>
@@ -38,7 +38,7 @@
 		</dict>
 		<dict>
 			<key>SortOrder</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>Type</key>
 			<string>static</string>
 			<key>Description</key>
@@ -51,10 +51,12 @@
 			<false/>
 		</dict>
 		<dict>
+			<key>Default</key>
+			<string>RealmDAO</string>
 			<key>SortOrder</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>Identifier</key>
-			<string>productName</string>
+			<string>optionName</string>
 			<key>Required</key>
 			<false/>
 			<key>Name</key>
@@ -65,16 +67,6 @@
 			<string>text</string>
 			<key>NotPersisted</key>
 			<true/>
-		</dict>
-		<dict>
-			<key>SortOrder</key>
-			<integer>0</integer>
-			<key>Identifier</key>
-			<string>productName</string>
-			<key>Type</key>
-			<string>static</string>
-			<key>Default</key>
-			<string>___VARIABLE_RealmDAO___</string>
 		</dict>
 	</array>
 </dict>
