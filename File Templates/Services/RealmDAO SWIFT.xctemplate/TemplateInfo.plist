@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___</string>
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
@@ -21,6 +23,36 @@
 	<key>Options</key>
 	<array>
 		<dict>
+			<key>SortOrder</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>and run &apos;pod install&apos;</string>
+			<key>Name</key>
+			<string>and run &apos;pod install&apos;</string>
+			<key>Identifier</key>
+			<string>podfile_update_required2</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>2</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>Add  pod &apos;RealmSwift&apos;, &apos;~&gt; 4.3.0&apos;  to your Podfile</string>
+			<key>Name</key>
+			<string>Add  pod &apos;RealmSwift&apos;, &apos;~&gt; 4.3.0&apos; to your Podfile</string>
+			<key>Identifier</key>
+			<string>podfile_update_required1</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>1</integer>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Required</key>
@@ -35,12 +67,14 @@
 			<true/>
 		</dict>
 		<dict>
+			<key>SortOrder</key>
+			<integer>0</integer>
 			<key>Identifier</key>
 			<string>productName</string>
 			<key>Type</key>
 			<string>static</string>
 			<key>Default</key>
-			<string>RealmDAO</string>
+			<string>___VARIABLE_RealmDAO___</string>
 		</dict>
 	</array>
 </dict>

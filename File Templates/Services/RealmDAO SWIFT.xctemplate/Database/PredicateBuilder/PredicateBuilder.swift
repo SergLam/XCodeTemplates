@@ -9,9 +9,9 @@ final class PredicateBuilder {
     
     static let messageIdFieldName = "id"
     
-    static let isIncomingMessagePredicate = PredicateBuilder.equalityPredicate(messageIsIncomingFieldName, true)
+    static let messagePredicate = PredicateBuilder.equalityPredicate(messageIdFieldName, 101)
     
-    static let questionUpdatePredicateFormat = "\(PredicateBuilder.questionIdFieldName) IN %@ AND \(PredicateBuilder.chatIdFieldName) IN %@"
+    static let messagePredicateFormat = "\(PredicateBuilder.chatIdFieldName) == %@ AND \(PredicateBuilder.messageIdFieldName) == %@"
     
     // MARK: - Predicate creation methods
     static func equalityPredicate(_ fieldName: String, _ value: Any) -> NSPredicate {

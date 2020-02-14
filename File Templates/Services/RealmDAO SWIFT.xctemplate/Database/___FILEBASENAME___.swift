@@ -1,11 +1,11 @@
 //___FILEHEADER___
 
 import Foundation
-import RealmSwift// pod 'RealmSwift', '~> 4.3.0'
+import RealmSwift
 
 // NOTE: - RealmDAO.configureMigration() - call this method before first call to the database in your app.
 // E.g. at the app delegate init method
-final class RealmDAO {
+final class ___FILEBASENAMEASIDENTIFIER___ {
     
     static let shared = RealmDAO()
     
@@ -22,6 +22,7 @@ final class RealmDAO {
         } catch {
             let message = "Unable to create realm instance \(error.localizedDescription)"
             // ErrorLoggerService.logWithTrace(.error(errorMessage: message))
+            preconditionFailure(message)
         }
     }()
     
@@ -72,6 +73,7 @@ final class RealmDAO {
         } catch {
             let message = "Unable to create realm instance \(error.localizedDescription)"
             // ErrorLoggerService.logWithTrace(.error(errorMessage: message))
+            preconditionFailure(message)
         }
     }
     
@@ -82,6 +84,7 @@ final class RealmDAO {
         } catch {
             let message = "Unable to create realm instance \(error.localizedDescription)"
             // ErrorLoggerService.logWithTrace(.error(errorMessage: message))
+            preconditionFailure(message)
         }
     }
     
