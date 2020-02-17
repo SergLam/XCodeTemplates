@@ -31,7 +31,10 @@ final class ___FILEBASENAMEASIDENTIFIER___ {
                              _ file: String = #file,
                              _ function: String = #function,
                              _ line: Int = #line) {
+        #if DEBUG
+        // NOTE: AdHoc config also will fails without if statement
         assertionFailure(errorMessage)
+        #endif
         let error = AppInternalError.error(errorMessage: errorMessage)
         let logInfoString: String = "\(error.localizedDescription)\nfile: \(file)\nfunction: \(function)\nline: \(line)"
         let logInfo: [String: Any] = ["file": file, "function": function, "line": line]
