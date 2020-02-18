@@ -2,7 +2,10 @@
 
 ## Instruction.
 
-Install this repo into __YOUR_USER__/Library/Developer/Xcode/Templates
+Install this repo into
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates/
+
 * Note: if there is no folder named 'Templates' you should create it.
 
 Template will be automatically added to your Xcode New Project screen in section Templates.
@@ -16,7 +19,11 @@ https://github.com/kharrison/Xcode-Templates
 https://github.com/vokal/Xcode-Template
 
 ### English articles:
+#### Prohect templates:
 https://useyourloaf.com/blog/creating-custom-xcode-project-templates/
+
+#### File templates:
+http://jeanetienne.net/2017/09/10/advanced-xcode-template.html
 https://thoughtbot.com/blog/creating-custom-xcode-templates
 
 ### Russian articles:
