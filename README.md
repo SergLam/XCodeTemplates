@@ -19,7 +19,7 @@ https://github.com/kharrison/Xcode-Templates
 https://github.com/vokal/Xcode-Template
 
 ### English articles:
-#### Prohect templates:
+#### Project templates:
 https://useyourloaf.com/blog/creating-custom-xcode-project-templates/
 
 #### File templates:
