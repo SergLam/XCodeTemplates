@@ -1,0 +1,87 @@
+/*
+//___FILEHEADER___
+ */
+
+// MARK: - General
+"cancel" = "Cancel";
+"error" = "Error";
+"success" = "Success";
+"ok" = "OK";
+"app-settings" = "Open App Settings";
+"send" = "Send";
+"save" = "Save";
+"delete" = "Delete";
+"more" = "More";
+"male" = "Male";
+"female" = "Female";
+"app-name" = "GiftWishes";
+"close" = "Close";
+"done" = "Done";
+"loading" = "Loading";
+"back" = "Back";
+"yes" = "Yes";
+"no" = "No";
+"continue" = "Continue";
+"skip" = "Skip";
+"skip-uppercase" = "SKIP";
+"next" = "Next";
+"description" = "Description";
+"todo" = "TODO";
+"donate" = "Donate";
+"thank-you" = "Thank you!";
+"warning" = "Warning";
+
+"end-date" = "End date:\n%@";
+"start-date" = "Start date:\n%@";
+
+// MARK: - Social netwokrs
+"gmail" = "Gmail";
+"instagram" = "Instagram";
+"instagram-login.screen-title" = "Sign in with Instagram";
+"facebook" = "Facebook";
+
+// MARK: - Errors
+"image.picker-max-count" = "You can select up to 10 photos";
+"image.base64-convert-error" = "Unable to convert image to base64 string";
+
+// MARK: - Errors - Access Denied
+"access.error-photos" = "Photos access was denied";
+"access.error-camera" = "Camera access was denied";
+
+// MARK: - Errors - Hardware
+"error.camera-not-available" = "Camera not available";
+
+// MARK: - Error - networking
+"error.offline" = "The Internet connection appears to be offline";
+"error.offline-view-title" = "No Internet Connection";
+
+// MARK: - Error - JSON parsing
+"error.parsing-key" = "Unable to parse %@ as %@";
+
+// MARK: - Social auth Errors
+"auth-error.empty-credentials" = "Error - Unable to get user credentials";
+
+// MARK: - Auth errors
+"auth-error-not-found" = "Not found";
+"auth-error-not-authorized" = "Authorization error. You should sign in first";
+"auth-error-load-profile" = "Failed to load user profile";
+"auth-error-unable-logout" = "Unable to log out";
+"auth-error-empty-token" = "Token data is empty";
+"auth-error-empty-refresh-token" = "Refresh token is empty";
+"auth-error-empty-response" = "Some of required values is empty";
+"auth-error-invalid-password" = "Invalid password";
+"auth-error-empty-password" = "Current password is empty";
+"auth-error-google-sign-in" = "Unable to login with Google";
+"auth-error-no-error" = "No error should be shown";
+
+// MARK: - Date formatting
+"date.today" = "Today";
+"date.yesterday" = "Yesterday";
+
+// MARK: - Image picker alert
+"image.alert-take-photo" = "Take a photo";
+"image.alert-select-photo" = "Upload from album";
+
+// MARK: - Log out alert
+"my-profile.log-out.title" = "Logout";
+"my-profile.log-out.text" = "Are you sure you want to logout ?";

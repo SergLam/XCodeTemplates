@@ -29,6 +29,7 @@ pod &apos;ReachabilitySwift&apos;, &apos;~> 4.3.1&apos;
 pod &apos;Kingfisher&apos;, &apos;~> 5.9.0&apos;
 
 # UI  
+pod &apos;JGProgressHUD&apos;, &apos;~> 2.0.4&apos;
 pod &apos;SnapKit&apos;, &apos;~> 5.0.1&apos;
 pod &apos;IQKeyboardManagerSwift&apos;, &apos;~> 6.5.0&apos;
 
