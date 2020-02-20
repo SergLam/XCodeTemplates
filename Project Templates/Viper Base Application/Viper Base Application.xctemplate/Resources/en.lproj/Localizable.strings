@@ -56,7 +56,14 @@
 "error.offline-view-title" = "No Internet Connection";
 
 // MARK: - Error - JSON parsing
+"error.parsing-generic-error" = "Server response data corrupted.";
 "error.parsing-key" = "Unable to parse %@ as %@";
+"error.unknown-error" = "Unknown error"
+
+// MARK: - Error - Mandatory update
+"error.mandatory-update-title" = "Update Required";
+"error.mandatory-update-message" = "An update is required to continue.";
+"error.update-app" = "Update app";
 
 // MARK: - Social auth Errors
 "auth-error.empty-credentials" = "Error - Unable to get user credentials";
