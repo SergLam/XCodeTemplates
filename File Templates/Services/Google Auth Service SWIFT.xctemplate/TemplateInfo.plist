@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Module for faster implementation of Sign In With Google functionality</string>
+	<key>Summary</key>
+	<string>Google Auth Service</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>DefaultCompletionName</key>
+	<string>GoogleAuthService</string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productNameLabel</string>
+			<key>SortOrder</key>
+			<integer>0</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Default</key>
+			<string>GoogleAuthService</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>SortOrder</key>
+			<integer>1</integer>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Google Auth Service Class Name</string>
+			<key>Description</key>
+			<string>The error logger class name</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>2</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>Add following pods:</string>
+			<key>Name</key>
+			<string>Add following pods:</string>
+			<key>Identifier</key>
+			<string>podfile_update_required0</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>pod &apos;GoogleSignIn&apos;</string>
+			<key>Name</key>
+			<string>pod &apos;GoogleSignIn&apos;</string>
+			<key>Identifier</key>
+			<string>podfile_update_required1</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>4</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>pod &apos;FirebaseCore&apos;</string>
+			<key>Name</key>
+			<string>pod &apos;FirebaseCore&apos;</string>
+			<key>Identifier</key>
+			<string>podfile_update_required2</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>5</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>pod &apos;Firebase/Auth&apos;</string>
+			<key>Name</key>
+			<string>pod &apos;Firebase/Auth&apos;</string>
+			<key>Identifier</key>
+			<string>podfile_update_required3</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>6</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>pod &apos;Moya&apos;</string>
+			<key>Name</key>
+			<string>pod &apos;Moya&apos;</string>
+			<key>Identifier</key>
+			<string>podfile_update_required4</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>SortOrder</key>
+			<integer>7</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>to your Podfile</string>
+			<key>Name</key>
+			<string>to your Podfile</string>
+			<key>Identifier</key>
+			<string>podfile_update_required5</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+
+		<dict>
+			<key>SortOrder</key>
+			<integer>8</integer>
+			<key>Type</key>
+			<string>static</string>
+			<key>Description</key>
+			<string>and run &apos;pod install&apos;</string>
+			<key>Name</key>
+			<string>and run &apos;pod install&apos;</string>
+			<key>Identifier</key>
+			<string>podfile_update_required6</string>
+			<key>Required</key>
+			<false/>
+		</dict>
+
+	</array>
+</dict>
+</plist>
