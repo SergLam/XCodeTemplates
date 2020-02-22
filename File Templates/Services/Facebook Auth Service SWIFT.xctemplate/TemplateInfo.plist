@@ -5,13 +5,13 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>Module for faster implementation of Sign In With Google functionality</string>
+	<string>Module for faster implementation of Sign In With Facebook functionality</string>
 	<key>Summary</key>
-	<string>Google Auth Service</string>
+	<string>FacebookAuthorizationService</string>
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>DefaultCompletionName</key>
-	<string>GoogleAuthService</string>
+	<string>FacebookAuthorizationService</string>
 	<key>CFBundleIdentifier</key>
 	<string></string>
 	<key>Platforms</key>
@@ -28,7 +28,7 @@
 			<key>Type</key>
 			<string>static</string>
 			<key>Default</key>
-			<string>GoogleAuthService</string>
+			<string>FacebookAuthorizationService</string>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -38,9 +38,9 @@
 			<key>Required</key>
 			<false/>
 			<key>Name</key>
-			<string>Google Auth Service Class Name</string>
+			<string>Facebook Auth Service Class Name</string>
 			<key>Description</key>
-			<string>The Google Auth Service class name</string>
+			<string>Facebook Authorization Service class name</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>NotPersisted</key>
@@ -66,9 +66,9 @@
 			<key>Type</key>
 			<string>static</string>
 			<key>Description</key>
-			<string>pod &apos;GoogleSignIn&apos;</string>
+			<string>pod &apos;FacebookCore&apos;</string>
 			<key>Name</key>
-			<string>pod &apos;GoogleSignIn&apos;</string>
+			<string>pod &apos;FacebookCore&apos;</string>
 			<key>Identifier</key>
 			<string>podfile_update_required1</string>
 			<key>Required</key>
@@ -80,9 +80,9 @@
 			<key>Type</key>
 			<string>static</string>
 			<key>Description</key>
-			<string>pod &apos;FirebaseCore&apos;</string>
+			<string>pod &apos;FacebookLogin&apos;</string>
 			<key>Name</key>
-			<string>pod &apos;FirebaseCore&apos;</string>
+			<string>pod &apos;FacebookLogin&apos;</string>
 			<key>Identifier</key>
 			<string>podfile_update_required2</string>
 			<key>Required</key>
@@ -94,9 +94,9 @@
 			<key>Type</key>
 			<string>static</string>
 			<key>Description</key>
-			<string>pod &apos;Firebase/Auth&apos;</string>
+			<string>pod &apos;FacebookShare&apos;</string>
 			<key>Name</key>
-			<string>pod &apos;Firebase/Auth&apos;</string>
+			<string>pod &apos;FacebookShare&apos;</string>
 			<key>Identifier</key>
 			<string>podfile_update_required3</string>
 			<key>Required</key>
