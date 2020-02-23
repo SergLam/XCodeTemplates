@@ -14,6 +14,9 @@ After you finish generation of new project using template, go to new project's f
 
 ## Usefull links:
 
+### Viper Module example
+https://github.com/infinum/iOS-VIPER-Xcode-Templates
+
 ### Code:
 https://github.com/kharrison/Xcode-Templates
 https://github.com/vokal/Xcode-Template
