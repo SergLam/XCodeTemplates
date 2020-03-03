@@ -5,13 +5,11 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>Send non-fatal error(issues) to the third-party services (Microsoft App Center, Google Crashlytics, Bugfender)</string>
+	<string>Protocols for base instances of VIPER + Coordinator architecture</string>
 	<key>Summary</key>
-	<string>Error logger service</string>
-	<key>SortOrder</key>
-	<string>1</string>
+	<string>VIPER + Coordinator Protocols</string>
 	<key>DefaultCompletionName</key>
-	<string>ErrorLoggerService</string>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string></string>
 	<key>Platforms</key>
@@ -19,29 +17,6 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>Options</key>
-	<array>
-		<dict>
-			<key>Identifier</key>
-			<string>productName</string>
-			<key>Required</key>
-			<false/>
-			<key>Name</key>
-			<string>Error Logger Class Name</string>
-			<key>Description</key>
-			<string>The error logger class name</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>productName</string>
-			<key>Type</key>
-			<string>static</string>
-			<key>Default</key>
-			<string>ErrorLoggerService</string>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>
