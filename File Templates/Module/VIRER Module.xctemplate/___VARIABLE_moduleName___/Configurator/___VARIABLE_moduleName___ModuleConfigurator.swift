@@ -21,7 +21,6 @@ class ___VARIABLE_moduleName___ModuleConfigurator: ModuleConfigurator {
         presenter.dataSource = dataSource
         
         view.presenter = presenter
-        view.animator = animator
         view.dataSource = dataSource
 
         let module = ___VARIABLE_moduleName___Module(interactor: interactor,

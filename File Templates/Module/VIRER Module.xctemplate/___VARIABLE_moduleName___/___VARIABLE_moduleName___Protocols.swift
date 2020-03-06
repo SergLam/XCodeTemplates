@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 
 protocol ___VARIABLE_moduleName___ModuleProtocol: Module {
-    var interactor:___VARIABLE_moduleName___InteractorProtocol { get set }
+    var interactor: ___VARIABLE_moduleName___InteractorProtocol { get set }
     var presenter: ___VARIABLE_moduleName___PresenterProtocol { get set }
     var view: ___VARIABLE_moduleName___ViewProtocol { get set }
     var dataSource: ___VARIABLE_moduleName___DataSourceProtocol { get set }
