@@ -2,7 +2,10 @@
 
 import Foundation
 
-protocol ModuleConfigurator {
+protocol ModuleConfigurator: ModuleDataModel {
+    
     associatedtype ModuleType
-    static func makeModule() -> ModuleType
+    associatedtype ModelType
+    
+    static func makeModule(with model: ModelType) -> ModuleType
 }

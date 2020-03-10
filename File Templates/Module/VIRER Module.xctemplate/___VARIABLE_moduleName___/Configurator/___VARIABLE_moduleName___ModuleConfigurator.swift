@@ -4,9 +4,10 @@ import UIKit
 
 class ___VARIABLE_moduleName___ModuleConfigurator: ModuleConfigurator {
     
+    typealias ModelType = ___VARIABLE_moduleModelName___
     typealias ModuleType = ___VARIABLE_moduleName___ModuleProtocol
     
-    class func makeModule() -> ___VARIABLE_moduleName___ModuleProtocol {
+    class func makeModule(with model: ___VARIABLE_moduleModelName___) -> ___VARIABLE_moduleName___ModuleProtocol {
         let interactor = ___VARIABLE_moduleName___Interactor()
         let presenter = ___VARIABLE_moduleName___Presenter()
         

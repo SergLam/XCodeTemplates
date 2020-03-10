@@ -44,3 +44,8 @@ protocol ___VARIABLE_moduleName___InteractorProtocol: Interactor {
 protocol ___VARIABLE_moduleName___DataSourceProtocol: DataSource {
     // NOTE: - Place computed properties / getters / setters here
 }
+
+protocol ___VARIABLE_moduleName___ModuleDataModelProtocol: ModuleDataModel {
+    // NOTE: - Dependency injection / properties
+    // that should be used during module building goes here
+}
