@@ -3,7 +3,7 @@
 import Foundation
 import UIKit
 
-class ___VARIABLE_moduleName___Module: ___VARIABLE_moduleName___ModuleProtocol {
+final class ___VARIABLE_moduleName___Module: ___VARIABLE_moduleName___ModuleProtocol {
 
     var interactor: ___VARIABLE_moduleName___InteractorProtocol
     var presenter: ___VARIABLE_moduleName___PresenterProtocol

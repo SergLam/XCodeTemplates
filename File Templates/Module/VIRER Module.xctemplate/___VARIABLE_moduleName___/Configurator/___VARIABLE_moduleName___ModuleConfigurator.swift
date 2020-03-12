@@ -2,7 +2,7 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___ModuleConfigurator: ModuleConfigurator {
+final class ___VARIABLE_moduleName___ModuleConfigurator: ModuleConfigurator {
     
     typealias ModelType = ___VARIABLE_moduleModelName___
     typealias ModuleType = ___VARIABLE_moduleName___ModuleProtocol
