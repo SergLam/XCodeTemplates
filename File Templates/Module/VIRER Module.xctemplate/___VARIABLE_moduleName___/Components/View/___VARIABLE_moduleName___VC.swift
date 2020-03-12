@@ -5,7 +5,7 @@ import UIKit
 
 final class ___VARIABLE_moduleName___VC: BaseViewController, ___VARIABLE_moduleName___ViewProtocol {
     
-    var presenter: ___VARIABLE_moduleName___PresenterProtocol?
+    weak var presenter: ___VARIABLE_moduleName___PresenterProtocol?
     weak var dataSource: ___VARIABLE_moduleName___DataSourceProtocol?
     
     private let contentView: ___VARIABLE_moduleName___VCView = ___VARIABLE_moduleName___VCView()
