@@ -5,7 +5,6 @@ import AppCenterCrashes
 // pod 'AppCenter', '~> 2.5.1'
 // https://docs.microsoft.com/en-us/appcenter/sdk/crashes/ios
 import BugfenderSDK
-import os
 // pod 'BugfenderSDK', '~> 1.7'
 // https://bugfender.com/
 import FirebaseCrashlytics
@@ -13,6 +12,7 @@ import FirebaseCrashlytics
 // pod 'Firebase'
 // pod 'Firebase/Analytics'
 import Foundation
+import os
 
 final class ___FILEBASENAMEASIDENTIFIER___ {
     
