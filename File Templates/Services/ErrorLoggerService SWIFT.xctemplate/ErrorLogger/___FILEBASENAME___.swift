@@ -5,12 +5,13 @@ import AppCenterCrashes
 // pod 'AppCenter', '~> 2.5.1'
 // https://docs.microsoft.com/en-us/appcenter/sdk/crashes/ios
 import BugfenderSDK
+import os
 // pod 'BugfenderSDK', '~> 1.7'
 // https://bugfender.com/
-import Crashlytics
-// https://firebase.google.com/docs/crashlytics/get-started?platform=ios
-// pod 'Fabric', '~> 1.10.2'
-// pod 'Crashlytics', '~> 3.13.4'
+import FirebaseCrashlytics
+// https://firebase.google.com/docs/crashlytics/upgrade-sdk?platform=ios
+// pod 'Firebase'
+// pod 'Firebase/Analytics'
 import Foundation
 
 final class ___FILEBASENAMEASIDENTIFIER___ {
@@ -37,10 +38,12 @@ final class ___FILEBASENAMEASIDENTIFIER___ {
         #endif
         let error = AppInternalError.error(errorMessage: errorMessage)
         let logInfoString: String = "\(error.localizedDescription)\nfile: \(file)\nfunction: \(function)\nline: \(line)"
-        let logInfo: [String: Any] = ["file": file, "function": function, "line": line]
-        CLSLogv("%@", getVaList([error.nsError.userInfo]))
-        Crashlytics.sharedInstance().recordError(error.nsError, withAdditionalUserInfo: logInfo)
-        _ = Bugfender.sendIssueReturningUrl(withTitle: error.nsError.domain, text: logInfoString)
+        os_log("%@", log: .error, type: .error, errorMessage)
+        Crashlytics.crashlytics().log(logInfoString)
+        Crashlytics.crashlytics().record(error: error.nsError)
+        if UIApplication.shared.isRunningInTestFlightEnvironment() {
+            let _ = Bugfender.sendIssueReturningUrl(withTitle: error.nsError.domain, text: logInfoString)
+        }
     }
     
 }
