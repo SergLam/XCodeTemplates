@@ -1,7 +1,7 @@
 //___FILEHEADER___
 
-import os
 import Foundation
+import os
 
 // https://www.lordcodes.com/articles/clear-and-searchable-logging-in-swift-with-oslog
 extension OSLog {
