@@ -21,7 +21,7 @@ protocol ___VARIABLE_moduleName___ViewProtocol: View {
     var dataSource: ___VARIABLE_moduleName___DataSourceProtocol? { get }
     
     // Presenter -> view
-    func didReceivedError(error: String)
+    func didReceiveError(error: String)
 }
 
 protocol ___VARIABLE_moduleName___PresenterProtocol: Presenter {
@@ -43,6 +43,7 @@ protocol ___VARIABLE_moduleName___InteractorProtocol: Interactor {
 
 protocol ___VARIABLE_moduleName___DataSourceProtocol: DataSource {
     // NOTE: - Place computed properties / getters / setters here
+    var presenter: ___VARIABLE_moduleName___PresenterProtocol? { get set }
 }
 
 protocol ___VARIABLE_moduleName___ModuleDataModelProtocol: ModuleDataModel {

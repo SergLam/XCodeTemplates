@@ -24,7 +24,7 @@ final class ___VARIABLE_moduleName___VC: BaseViewController, ___VARIABLE_moduleN
 // MARK: - ___VARIABLE_moduleName___ViewProtocol
 extension ___VARIABLE_moduleName___VC {
     
-    func didReceivedError(error: String) {
+    func didReceiveError(error: String) {
         AlertPresenter.showErrorAlert(at: self, errorMessgage: error)
     }
     
