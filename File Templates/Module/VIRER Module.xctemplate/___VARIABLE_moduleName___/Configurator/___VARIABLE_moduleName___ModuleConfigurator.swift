@@ -16,6 +16,7 @@ final class ___VARIABLE_moduleName___ModuleConfigurator: ModuleConfigurator {
         let dataSource = ___VARIABLE_moduleName___DataSource()
         
         interactor.presenter = presenter
+        interactor.dataSource = dataSource
         
         presenter.view = view
         presenter.interactor = interactor

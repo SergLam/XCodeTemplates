@@ -18,7 +18,7 @@ protocol ___VARIABLE_moduleName___ModuleProtocol: Module {
 protocol ___VARIABLE_moduleName___ViewProtocol: View {
     
     var presenter: ___VARIABLE_moduleName___PresenterProtocol? { get set }
-    var dataSource: ___VARIABLE_moduleName___DataSourceProtocol? { get }
+    var dataSource: ___VARIABLE_moduleName___DataSourceProtocol? { get set }
     
     // Presenter -> view
     func didReceiveError(error: String)
@@ -37,6 +37,7 @@ protocol ___VARIABLE_moduleName___PresenterProtocol: Presenter {
 protocol ___VARIABLE_moduleName___InteractorProtocol: Interactor {
     
     var presenter: ___VARIABLE_moduleName___PresenterProtocol? { get set }
+    var dataSource: ___VARIABLE_moduleName___DataSourceProtocol? { get set }
     // NOTE: - Place actions + services here (conformance to protocol)
 
 }
