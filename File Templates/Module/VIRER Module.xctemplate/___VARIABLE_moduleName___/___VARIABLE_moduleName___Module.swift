@@ -10,8 +10,12 @@ final class ___VARIABLE_moduleName___Module: ___VARIABLE_moduleName___ModuleProt
     var view: ___VARIABLE_moduleName___ViewProtocol
     var dataSource: ___VARIABLE_moduleName___DataSourceProtocol
     
-    // NOTE: Place module navigation closures here
     var onBackSelected: VoidClosure?
+    
+    // MARK: - Life cycle
+    deinit {
+        
+    }
     
     init(interactor: ___VARIABLE_moduleName___InteractorProtocol,
          presenter: ___VARIABLE_moduleName___PresenterProtocol,
@@ -26,6 +30,10 @@ final class ___VARIABLE_moduleName___Module: ___VARIABLE_moduleName___ModuleProt
     
     func viewToPresent() -> View {
         return view
+    }
+    
+    func prepareToDeinit() {
+        
     }
     
 }

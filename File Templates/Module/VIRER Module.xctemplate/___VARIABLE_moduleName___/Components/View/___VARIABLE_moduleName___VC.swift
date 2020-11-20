@@ -11,6 +11,10 @@ final class ___VARIABLE_moduleName___VC: BaseViewController, ___VARIABLE_moduleN
     private let contentView: ___VARIABLE_moduleName___VCView = ___VARIABLE_moduleName___VCView()
     
     // MARK: - Life cycle
+    deinit {
+        
+    }
+    
     override func loadView() {
         view = contentView
     }
@@ -24,8 +28,12 @@ final class ___VARIABLE_moduleName___VC: BaseViewController, ___VARIABLE_moduleN
 // MARK: - ___VARIABLE_moduleName___ViewProtocol
 extension ___VARIABLE_moduleName___VC {
     
-    func didReceiveError(error: String) {
-        AlertPresenter.showErrorAlert(at: self, errorMessgage: error)
+    func didReceivedError(error: String) {
+        AlertPresenter.showErrorAlert(at: self, errorMessage: error)
+    }
+    
+    func prepareToDeinit() {
+        
     }
     
 }

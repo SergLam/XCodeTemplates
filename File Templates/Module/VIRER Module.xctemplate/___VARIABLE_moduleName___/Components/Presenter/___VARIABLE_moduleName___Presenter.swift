@@ -10,4 +10,17 @@ final class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___Present
     weak var dataSource: ___VARIABLE_moduleName___DataSourceProtocol?
     weak var module: ___VARIABLE_moduleName___ModuleProtocol?
     
+    // MARK: - Life cycle
+    deinit {
+        
+    }
+    
+    init() {
+        
+    }
+    
+    func prepareToDeinit() {
+        
+    }
+    
 }
