@@ -3,17 +3,17 @@
 import SnapKit
 import UIKit
 
-final class ___VARIABLE_collectionControllerName___CollectionViewCell: UICollectionViewCell {
+final class ___VARIABLE_tableControllerName___TableViewCell: UITableViewCell {
     
     // MARK: - Actions
     
-    static let reuseIdentifier: String = String(describing: ___VARIABLE_collectionControllerName___CollectionViewCell.self)
+    static let reuseIdentifier: String = String(describing: ___VARIABLE_tableControllerName___TableViewCell.self)
     
     // MARK: - Subviews
     
     // MARK: - Life cycle
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
     }
     
@@ -27,7 +27,7 @@ final class ___VARIABLE_collectionControllerName___CollectionViewCell: UICollect
     }
     
     // MARK: - Public functions
-    func update(_ model: ___VARIABLE_collectionControllerName___CollectionViewCellVM) {
+    func update(_ model: ___VARIABLE_tableControllerName___TableViewCellVM) {
         
     }
     

@@ -45,7 +45,7 @@ extension ___VARIABLE_collectionControllerName___CollectionController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let identifier: String = ___VARIABLE_collectionControllerName___CollectionViewCell.reuseIdentifier
-        guard let cell: EventParticipantsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? ___VARIABLE_collectionControllerName___CollectionViewCell else {
+        guard let cell: ___VARIABLE_collectionControllerName___CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? ___VARIABLE_collectionControllerName___CollectionViewCell else {
             let message: String = "Unable to dequeueReusableCell"
             ErrorLoggerService.logWithTrace(message)
             preconditionFailure(message)

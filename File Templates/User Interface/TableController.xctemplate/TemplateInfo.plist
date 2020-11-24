@@ -11,20 +11,20 @@
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Description</key>
-	<string>Create new class to manage collection view behaviour</string>
+	<string>Create new class to manage table view behaviour</string>
 	<key>Summary</key>
-	<string>Create new class to manage collection view behaviour</string>
+	<string>Create new class to manage table view behaviour</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>SortOrder</key>
 			<integer>0</integer>
 			<key>Description</key>
-			<string>The name of collection view data sorce &amp; delegate</string>
+			<string>The name of table view data sorce &amp; delegate</string>
 			<key>Identifier</key>
-			<string>collectionControllerName</string>
+			<string>tableControllerName</string>
 			<key>Name</key>
-			<string>CollectionControllerName:</string>
+			<string>TableControllerName:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -38,9 +38,9 @@
 			<key>Description</key>
 			<string>The name of class / sctuct that will be user for cell data model</string>
 			<key>Identifier</key>
-			<string>collectionViewCellDataModel</string>
+			<string>tableViewCellDataModel</string>
 			<key>Name</key>
-			<string>Collection View Cell Data Model:</string>
+			<string>Table View Cell Data Model:</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Required</key>
@@ -50,6 +50,6 @@
 		</dict>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>CollectionController</string>
+	<string>TableController</string>
 </dict>
 </plist>
