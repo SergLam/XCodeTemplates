@@ -57,7 +57,7 @@ extension ___VARIABLE_tableControllerName___TableController {
 }
 
 // MARK: - UITableViewDelegate
-extension ___VARIABLE_collectionControllerName___TableController {
+extension ___VARIABLE_tableControllerName___TableController {
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return CGFloat.leastNonzeroMagnitude
