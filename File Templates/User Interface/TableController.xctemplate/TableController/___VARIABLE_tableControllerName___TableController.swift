@@ -45,7 +45,7 @@ extension ___VARIABLE_tableControllerName___TableController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let identifier: String = ___VARIABLE_tableControllerName___TableViewCell.reuseIdentifier
-        guard let cell: ___VARIABLE_collectionControllerName___CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? ___VARIABLE_collectionControllerName___CollectionViewCell else {
+        guard let cell: ___VARIABLE_tableControllerName___TableViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? ___VARIABLE_tableControllerName___TableViewCell else {
             let message: String = "Unable to dequeueReusableCell"
             ErrorLoggerService.logWithTrace(message)
             preconditionFailure(message)
