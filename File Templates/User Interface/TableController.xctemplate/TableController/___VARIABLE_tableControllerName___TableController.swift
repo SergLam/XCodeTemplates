@@ -7,7 +7,7 @@ protocol ___VARIABLE_tableControllerName___TableControllerDelegate: class {
     func didSelectItem(_ item: ___VARIABLE_tableControllerName___TableViewCellVM)
 }
 
-final class ___VARIABLE_tableControllerName___CollectionController: NSObject, TableController {
+final class ___VARIABLE_tableControllerName___TableController: NSObject, TableController {
     
     weak var delegate: ___VARIABLE_tableControllerName___TableControllerDelegate?
     
