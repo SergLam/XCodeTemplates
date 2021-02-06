@@ -21,4 +21,6 @@ protocol CollectionController: NSObject, UICollectionViewDataSource & UICollecti
     
     init(collectioView: UICollectionView)
     
+    func updateDataSource(with newItems: [CollectionCellModel], animated: Bool)
+    
 }

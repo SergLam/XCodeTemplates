@@ -21,4 +21,6 @@ protocol TableController: NSObject, UITableViewDataSource & UITableViewDelegate 
     
     init(tableView: UITableView)
     
+    func updateDataSource(with newItems: [TableCellModel], animated: Bool)
+    
 }
