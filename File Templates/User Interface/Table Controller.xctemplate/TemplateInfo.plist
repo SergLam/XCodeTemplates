@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Description</key>
+	<string>This generates a new UICollection View Cell class + XIB file + Cell Model struct.</string>
+	<key>Summary</key>
+	<string>This generates a new UICollection View Cell class + XIB file + Cell Model struct.</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Diffable Table Controller Class Name</string>
+			<key>Identifier</key>
+			<string>controllerName</string>
+			<key>Name</key>
+			<string>Controller Class Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Default</key>
+			<string></string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Table View Cell type that should be produced by cells factory</string>
+			<key>Identifier</key>
+			<string>cellType</string>
+			<key>Name</key>
+			<string>TableView Cell Type:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Default</key>
+			<string></string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Table View Header Footer view type that should be produced by cells factory</string>
+			<key>Identifier</key>
+			<string>headerFooterType</string>
+			<key>Name</key>
+			<string>Table View Header Footer Type:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Default</key>
+			<string>EmptyTableHeaderFooterView</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string></string>
+</dict>
+</plist>
