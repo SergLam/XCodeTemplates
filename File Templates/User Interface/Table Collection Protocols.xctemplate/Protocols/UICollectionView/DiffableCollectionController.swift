@@ -14,9 +14,9 @@ protocol DiffableCollectionController: NSObject, UICollectionViewDelegate & UICo
     
     var factory: CollectionCellsFactory { get set }
     
-    var collectioView: UICollectionView { get set }
+    var collectionView: UICollectionView { get set }
     
-    init(collectioView: UICollectionView)
+    init(collectionView: UICollectionView)
     
     func makeDataSource() -> DataSource
     

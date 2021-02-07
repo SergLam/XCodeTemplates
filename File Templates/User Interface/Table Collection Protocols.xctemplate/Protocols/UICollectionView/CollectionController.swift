@@ -17,9 +17,9 @@ protocol CollectionController: NSObject, UICollectionViewDataSource & UICollecti
     
     var factory: CollectionCellsFactory { get set }
     
-    var collectioView: UICollectionView { get set }
+    var collectionView: UICollectionView { get set }
     
-    init(collectioView: UICollectionView)
+    init(collectionView: UICollectionView)
     
     func updateDataSource(with newItems: [CollectionCellModel], animated: Bool)
     

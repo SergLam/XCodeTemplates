@@ -25,7 +25,7 @@ final class ___VARIABLE_controllerName___DiffableCollectionController: NSObject,
     
     var factory: CollectionCellsFactory = ___VARIABLE_controllerName___CollectionCellsFactory()
     
-    var collectioView: UICollectionView
+    var collectionView: UICollectionView
     
     private lazy var lastContentOffset: CGFloat = 0
     
@@ -34,12 +34,12 @@ final class ___VARIABLE_controllerName___DiffableCollectionController: NSObject,
     private lazy var collectionInset: CGFloat = LayoutConstants.spacing
     
     // MARK: - Life cycle
-    init(collectioView: UICollectionView) {
+    init(collectionView: UICollectionView) {
         
-        self.collectioView = collectioView
-        factory.registerAllCells(for: collectioView)
+        self.collectionView = collectionView
+        factory.registerAllCells(for: collectionView)
         super.init()
-        collectioView.delegate = self
+        collectionView.delegate = self
         if let factory = self.factory as? ___VARIABLE_controllerName___CollectionCellsFactory {
             factory.delegate = self
         }
@@ -55,7 +55,7 @@ final class ___VARIABLE_controllerName___DiffableCollectionController: NSObject,
     // MARK: - Internal / private functions
     func makeDataSource() -> DataSource {
         
-        let dataSource = ___VARIABLE_controllerName___DiffableDataSource(collectionView: collectioView) { collectionView, index, viewModel -> UICollectionViewCell? in
+        let dataSource = ___VARIABLE_controllerName___DiffableDataSource(collectionView: collectionView) { collectionView, index, viewModel -> UICollectionViewCell? in
             
             guard let model = viewModel as? CollectionCellModel else { return nil }
             return self.factory.generateCell(for: model, collectionView: collectionView, at: index)
