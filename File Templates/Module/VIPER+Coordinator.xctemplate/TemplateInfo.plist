@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Description</key>
+	<string>This generates a new user flow coordinator.</string>
+	<key>Summary</key>
+	<string>This generates a new user flow coordinator.</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the coordinator to create</string>
+			<key>Identifier</key>
+			<string>coordinatorName</string>
+			<key>Name</key>
+			<string>New Coordinator Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_coordinatorName___</string>
+			<key>Identifier</key>
+			<string>coordinatorNameIdentifier</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Coordinator type - CoordinatorTypes enum case</string>
+			<key>Identifier</key>
+			<string>coordinatorType</string>
+			<key>Name</key>
+			<string>Coordinator Type:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_coordinatorType___</string>
+			<key>Identifier</key>
+			<string>coordinatorTypeIdentifier</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string></string>
+</dict>
+</plist>
