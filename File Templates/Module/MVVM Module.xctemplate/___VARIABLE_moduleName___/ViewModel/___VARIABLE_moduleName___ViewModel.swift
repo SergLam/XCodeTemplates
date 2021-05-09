@@ -3,7 +3,7 @@
 import RxSwift
 import UIKit
 
-protocol ___VARIABLE_moduleName___ViewModelDelegate: class {
+protocol ___VARIABLE_moduleName___ViewModelDelegate: AnyObject {
     
     func didReceiveError(_ error: Error)
 }

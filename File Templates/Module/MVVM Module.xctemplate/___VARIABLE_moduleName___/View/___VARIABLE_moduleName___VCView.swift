@@ -3,7 +3,7 @@
 import SnapKit
 import UIKit
 
-protocol ___VARIABLE_moduleName___VCViewDelegate: class {
+protocol ___VARIABLE_moduleName___VCViewDelegate: AnyObject {
     
 }
 
