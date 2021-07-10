@@ -2,7 +2,7 @@
 
 import Foundation
 
-protocol Configurator: class {
+protocol Configurator: AnyObject {
     associatedtype ViewControllerType = ViewController
     associatedtype PresenterType = Presenter
     associatedtype InteractorType = Interactor

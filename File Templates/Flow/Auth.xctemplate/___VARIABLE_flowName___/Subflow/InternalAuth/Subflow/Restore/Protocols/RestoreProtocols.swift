@@ -3,7 +3,7 @@
 import Foundation
 import UIKit
 
-protocol RestoreConfiguratorFactory: class {
+protocol RestoreConfiguratorFactory: AnyObject {
     func makeRestoreConfigurator() -> RestoreConfigurator
 }
 

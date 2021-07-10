@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol BuilderProtocol: class {
+protocol BuilderProtocol: AnyObject {
     
     associatedtype FlowResult: FlowResultProtocol
     

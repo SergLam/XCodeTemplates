@@ -2,15 +2,15 @@
 
 import UIKit
 
-protocol Coordinator: class {
+protocol Coordinator: AnyObject {
     func start()
 }
 
-protocol CoordinatorOutput: class {
+protocol CoordinatorOutput: AnyObject {
     var finishFlow: (() -> Void)? { get set }
 }
 
-protocol CoordinatorViewOutput: class {
+protocol CoordinatorViewOutput: AnyObject {
     var flowReadyView: ((_ view: UIView) -> Void)? { get set }
 }
 

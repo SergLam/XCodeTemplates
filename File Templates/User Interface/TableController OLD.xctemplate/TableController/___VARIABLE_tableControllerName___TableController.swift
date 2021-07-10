@@ -2,7 +2,7 @@
 
 import UIKit
 
-protocol ___VARIABLE_tableControllerName___TableControllerDelegate: class {
+protocol ___VARIABLE_tableControllerName___TableControllerDelegate: AnyObject {
     
     func didSelectItem(_ item: ___VARIABLE_tableControllerName___TableViewCellVM)
 }

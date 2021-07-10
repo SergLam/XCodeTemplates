@@ -2,7 +2,7 @@
 
 import UIKit
 
-protocol ___VARIABLE_controllerName___TableControllerDelegate: class {
+protocol ___VARIABLE_controllerName___TableControllerDelegate: AnyObject {
     
 }
 

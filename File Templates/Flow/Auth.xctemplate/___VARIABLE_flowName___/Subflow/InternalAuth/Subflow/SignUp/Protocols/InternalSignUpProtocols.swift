@@ -3,7 +3,7 @@
 import Foundation
 import UIKit
 
-protocol InternalSignUpConfiguratorFactory: class {
+protocol InternalSignUpConfiguratorFactory: AnyObject {
     func makeInternalSignUpConfigurator() -> InternalSignUpConfigurator
 }
 

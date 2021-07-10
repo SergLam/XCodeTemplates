@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol RequestPerformableOutputProtocol: class {
+protocol RequestPerformableOutputProtocol: AnyObject {
     
     var output: RequestPerformableProtocol { get set }
     

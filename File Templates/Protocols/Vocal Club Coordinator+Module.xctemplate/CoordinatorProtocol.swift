@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CoordinatorProtocol: class {
+protocol CoordinatorProtocol: AnyObject {
     
     var type: CoordinatorTypes { get set }
     

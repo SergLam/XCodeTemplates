@@ -12,7 +12,7 @@ import Alamofire
 /// Completion that process NetworkDataPacket
 typealias NetworkRouterCompletion = (NetworkResponse) -> Void
 
-protocol RequestPerformableProtocol: class {
+protocol RequestPerformableProtocol: AnyObject {
     
     func performRequest(endpoint: EndpointProtocol, completion: @escaping NetworkRouterCompletion) -> RequestModel?
     

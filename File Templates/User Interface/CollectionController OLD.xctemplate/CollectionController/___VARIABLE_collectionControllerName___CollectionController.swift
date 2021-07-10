@@ -2,7 +2,7 @@
 
 import UIKit
 
-protocol ___VARIABLE_collectionControllerName___CollectionControllerDelegate: class {
+protocol ___VARIABLE_collectionControllerName___CollectionControllerDelegate: AnyObject {
     
     func didSelectItem(_ item: ___VARIABLE_collectionControllerName___CollectionViewCellVM)
 }

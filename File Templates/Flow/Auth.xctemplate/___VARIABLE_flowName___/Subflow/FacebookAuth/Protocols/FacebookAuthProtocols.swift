@@ -3,11 +3,11 @@
 import Foundation
 import FacebookLogin
 
-protocol FacebookAuthConfiguratorFactory: class {
+protocol FacebookAuthConfiguratorFactory: AnyObject {
     func makeAuthConfigurator() -> FacebookAuthConfigurator
 }
 
-protocol FacebookAuthConfigurator: class {
+protocol FacebookAuthConfigurator: AnyObject {
     var viewController: FacebookAuthViewController { get set }
     var delegate: FacebookAuthDelegate { get set }
 }

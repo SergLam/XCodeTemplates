@@ -3,7 +3,7 @@
 import Foundation
 import UIKit
 
-protocol MainConfiguratorFactory: class {
+protocol MainConfiguratorFactory: AnyObject {
     func makeMainConfigurator() -> MainConfigurator
 }
 

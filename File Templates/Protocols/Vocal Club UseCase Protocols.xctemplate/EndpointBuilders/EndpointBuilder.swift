@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol EndpointBuilderProtocol: class {
+protocol EndpointBuilderProtocol: AnyObject {
     
     static func buildEndpoint(with destination: EndpointDestinationProtocol) -> EndpointProtocol
     

@@ -3,11 +3,11 @@
 import Foundation
 import GoogleSignIn
 
-protocol GoogleAuthConfiguratorFactory: class {
+protocol GoogleAuthConfiguratorFactory: AnyObject {
     func makeAuthConfigurator() -> GoogleAuthConfigurator
 }
 
-protocol GoogleAuthConfigurator: class {
+protocol GoogleAuthConfigurator: AnyObject {
     var viewController: GoogleAuthViewController { get set }
     var delegate: GoogleAuthDelegate { get set }
 }

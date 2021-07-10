@@ -2,7 +2,7 @@
 
 import UIKit
 
-protocol ___VARIABLE_controllerName___CollectionControllerDelegate: class {
+protocol ___VARIABLE_controllerName___CollectionControllerDelegate: AnyObject {
     
 }
 

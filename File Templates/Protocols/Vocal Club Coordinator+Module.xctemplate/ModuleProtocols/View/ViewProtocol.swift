@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ViewProtocol: class {
+protocol ViewProtocol: AnyObject {
     
     associatedtype Presenter: PresenterProtocol
     

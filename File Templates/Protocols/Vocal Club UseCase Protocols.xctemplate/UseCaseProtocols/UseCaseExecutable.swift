@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-protocol UseCaseExecutable: class {
+protocol UseCaseExecutable: AnyObject {
     
     var accessTokenRequired: Bool { get }
     

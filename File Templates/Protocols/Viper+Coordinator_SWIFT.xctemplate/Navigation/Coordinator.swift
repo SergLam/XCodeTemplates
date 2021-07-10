@@ -9,7 +9,7 @@ import UIKit
 
 // https://academy.realm.io/posts/mobilization-lukasz-mroz-mvvm-coordinators-rxswift/
 
-protocol Coordinator: class {
+protocol Coordinator: AnyObject {
     
     // NOTE: Required for Equitable conformance - delete coordinator from childCoordinators array
     var identifier: String{ get }
