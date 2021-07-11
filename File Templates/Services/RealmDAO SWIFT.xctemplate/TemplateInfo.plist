@@ -42,9 +42,9 @@
 			<key>Type</key>
 			<string>static</string>
 			<key>Description</key>
-			<string>Add  pod &apos;RealmSwift&apos;, &apos;~&gt; 4.3.0&apos;  to your Podfile</string>
+			<string>Add  pod &apos;RealmSwift&apos;, &apos;~&gt; 10.5.1&apos;  to your Podfile</string>
 			<key>Name</key>
-			<string>Add  pod &apos;RealmSwift&apos;, &apos;~&gt; 4.3.0&apos; to your Podfile</string>
+			<string>Add  pod &apos;RealmSwift&apos;, &apos;~&gt; 10.5.1&apos; to your Podfile</string>
 			<key>Identifier</key>
 			<string>podfile_update_required1</string>
 			<key>Required</key>

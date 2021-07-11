@@ -17,4 +17,8 @@ enum DatabaseError: Error, LocalizedError {
         return self.description
     }
     
+    var failureReason: String? {
+        return self.description
+    }
+    
 }
