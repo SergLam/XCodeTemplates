@@ -29,7 +29,7 @@ final class ___VARIABLE_moduleName___VC: BaseViewController, ___VARIABLE_moduleN
 extension ___VARIABLE_moduleName___VC {
     
     func didReceiveError(error: Error) {
-        AlertPresenter.showErrorAlert(at: self, errorMessage: error.localizedDescription)
+        AlertPresenter.showErrorAlert(at: self, error: error)
     }
     
     func prepareToDeinit() {

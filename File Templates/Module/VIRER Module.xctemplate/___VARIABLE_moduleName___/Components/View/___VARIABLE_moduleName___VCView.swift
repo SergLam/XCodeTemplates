@@ -1,6 +1,5 @@
 //___FILEHEADER___
 
-import SnapKit
 import UIKit
 
 final class ___VARIABLE_moduleName___VCView: UIView {
