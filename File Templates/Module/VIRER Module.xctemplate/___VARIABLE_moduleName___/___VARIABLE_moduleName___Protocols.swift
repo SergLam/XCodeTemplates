@@ -21,7 +21,7 @@ protocol ___VARIABLE_moduleName___ViewProtocol: View {
     var dataSource: ___VARIABLE_moduleName___DataSourceProtocol? { get set }
     
     // Presenter -> view
-    func didReceiveError(error: String)
+    func didReceiveError(error: Error)
 }
 
 protocol ___VARIABLE_moduleName___PresenterProtocol: Presenter {

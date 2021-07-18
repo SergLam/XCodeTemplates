@@ -28,8 +28,8 @@ final class ___VARIABLE_moduleName___VC: BaseViewController, ___VARIABLE_moduleN
 // MARK: - ___VARIABLE_moduleName___ViewProtocol
 extension ___VARIABLE_moduleName___VC {
     
-    func didReceivedError(error: String) {
-        AlertPresenter.showErrorAlert(at: self, errorMessage: error)
+    func didReceiveError(error: Error) {
+        AlertPresenter.showErrorAlert(at: self, errorMessage: error.localizedDescription)
     }
     
     func prepareToDeinit() {
