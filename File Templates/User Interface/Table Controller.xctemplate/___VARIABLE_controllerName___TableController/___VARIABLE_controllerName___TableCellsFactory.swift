@@ -25,14 +25,10 @@ final class ___VARIABLE_controllerName___TableCellsFactory: TableCellsFactory {
     func registerAllCells(for tableView: UITableView) {
         
         cellTypes.forEach{
-            let bundle = Bundle(for: $0)
-            let nib = UINib(nibName: $0.reuseIdentifier, bundle: bundle)
-            tableView.register(nib, forCellReuseIdentifier: $0.reuseIdentifier)
+            tableView.register($0.self, forCellReuseIdentifier: $0.reuseIdentifier)
         }
         headerFooterTypes.forEach{
-            let bundle = Bundle(for: $0)
-            let nib = UINib(nibName: $0.reuseIdentifier, bundle: bundle)
-            tableView.register(nib, forHeaderFooterViewReuseIdentifier: $0.reuseIdentifier)
+            tableView.register($0.self, forHeaderFooterViewReuseIdentifier: $0.reuseIdentifier)
         }
     }
     
@@ -46,8 +42,8 @@ final class ___VARIABLE_controllerName___TableCellsFactory: TableCellsFactory {
 //                assertionFailure("Invalid model type")
 //                return UITableViewCell()
 //            }
-//            let cell = view.dequeueReusableCell(MyProfileHeaderTableViewCell.self, for: indexPath)
-//            cell.configureWithModel(model)
+//            let cell = tableView.dequeueReusableCell(MyProfileHeaderTableViewCell.self, for: indexPath)
+//            cell.update(with: model)
 //            return cell
             
             assertionFailure("Invalid cell type")
