@@ -6,6 +6,8 @@ Install this repo into
 
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates/
 
+/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates
+
 * Note: if there is no folder named 'Templates' you should create it.
 
 Template will be automatically added to your Xcode New Project screen in section Templates.
